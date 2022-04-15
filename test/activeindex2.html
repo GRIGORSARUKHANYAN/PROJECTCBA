@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href='https://css.gg/trash.css' rel='stylesheet'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Test Case</title>
+    <link rel="stylesheet" href="activestyle2.css">
+</head>
+
+<body>
+  <div class="container" style="max-width: 100%; padding-top: 10px">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4" id = "head">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="logo.png" class="bi me-2" width="40" height="40">
+        <h1 class="main_heddivh1" style="font-size: 35px; text-shadow: 2px 2px #a1a6ab;">CBA TestManager</h1>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="activeindex2.html" class="nav-link active">Test Cases</a></li>
+        <li class="nav-item"><a href="../add/addindex.html" class="nav-link" aria-current="page">Add Test Case</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="notif.png" height="35px" width="35px"></a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Log out</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+<div class="maindiv"> 
+    <div class="littlemain">
+        <!-- class=topnav փնտրման մասը -->
+        <div class="topnav">
+            <i class="bi bi-x-lg"></i>
+            <i id="xbtn" class="fa fa-close " style="font-size:28px"></i>
+                <input id="serchinput" type="text" placeholder="Search.." name="search">
+                <button id="serchbtn" type="submit"><i class="fa fa-search"></i></button>
+            <i id="dellicone"  class="gg-trash" style="display: none; width: 20px; height: 20px; " ></i>
+        </div>    
+        
+        <!-- սղյուսակի վերնագրային մասը -->
+        <table id="tableid"  style="width:100%;font-size: 18px; ">
+            <tr  >
+                <th></th>
+                <th></th>
+                <th>Id</th>
+                <th>Priority</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Updated</th>
+                <th>Description</th>
+                
+            </tr>
+        </table>
+        <input type="submit" name="" value="Add" class="addtest">
+    </div>
+</div>
+        <!-- ///////// Footer div //////// -->
+<footer>
+    <div class="footer-child">
+        <div>
+            <span class="text-muted">Copyright © 2021       
+                <a href="https://www.cba.am/am/SitePages/Default.aspx" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" target="_blank">
+                    <img src="cba.png" width="20px" height="20px" >
+                </a>
+                Central Bank Of Armenia. All rights reserved.
+            </span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> 
+                <span class="text-muted" > Need help or have questions?  </span></a>
+            </li>
+            <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> <img src="mail.png" width="20px" height="20px" ></a></li>
+            <li class="ms-3"><a class="text-muted" href="tel:+37491110570"> <img src="Phone.png" width="20px" height="20px" ></a></li>
+        </ul>
+    </div> 
+</footer>
+  <script src="addscript2.js"></script>
+</body>
+</html>
+
+
+
