@@ -42,7 +42,7 @@ serchbtn.addEventListener("click", searchfu);
 
 // addlist ֆունկցիան ավելացնում է տողերը
 function addlist() {
-    for (let i = 0; i < 44; i++) { 
+    for (let i = 0; i < 100; i++) { 
         tableid.innerHTML+=`<tr id="trid${i+1}" class="trclass" >
         <td><input class="classinput" id="checkbox${i+1}" type="checkbox" onclick="delliteicone()"  ></td>
         <td><i class="fas fa-pen" style="font-size:20px"></i></td>
@@ -90,3 +90,36 @@ dellicone.style.display = "none";
 }
 dellicone.addEventListener("click", rem);
 
+
+
+
+
+
+// porc  ejeri popoxutyun arandz abteyti
+let navactiv = document.getElementById("navactiv")
+navactiv.addEventListener("click", activ1);
+let navadd = document.getElementById("navadd")
+navadd.addEventListener("click",  activ2);
+
+
+
+let mainaddid = document.getElementById("main-add-id")
+let mainactivid = document.getElementById("main-activ-id")
+
+function activ2() {
+    mainaddid.style.display="block"
+    mainactivid.style.display="none"
+    navactiv.style.backgroundColor="#FFFFFF"
+    navadd.style.backgroundColor="#0D6EFD"
+    
+}
+
+
+function activ1() {
+    mainaddid.style.display="none"
+    mainactivid.style.display="block"
+    navactiv.style.backgroundColor="#0D6EFD"
+    navadd.style.backgroundColor="#FFFFFF"
+}
+
+activ1()

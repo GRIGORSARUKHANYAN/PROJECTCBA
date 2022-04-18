@@ -47,6 +47,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Test Case</title>
     <link rel="stylesheet" href="activestyle2.css">
+    
 </head>
 
 <body>
@@ -57,10 +58,10 @@
         <h1 class="main_heddivh1" style="font-size: 35px; text-shadow: 2px 2px #a1a6ab;">CBA TestManager</h1>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="activeindex2.html" class="nav-link active">Test Cases</a></li>
-        <li class="nav-item"><a href="../add/addindex.html" class="nav-link" aria-current="page">Add Test Case</a></li>
+      <ul  class="nav ">
+        <li style="padding-left: 20px;"  class="nav-item"><h2  >Projects</h2></li>
+        <li style="padding-left: 20px;" id="navactiv" ><h2  >Test  Cases</h2></li>
+        <li style="padding-left: 20px;" id="navadd" ><h2  aria-current="page">Add  Test  Case</h2></li>
         <li class="nav-item"><a href="#" class="nav-link"><img src="notif.png" height="35px" width="35px"></a></li>
         <li class="nav-item"><a href="#" class="nav-link">Log out</a></li>
       </ul>
@@ -69,7 +70,225 @@
 
   <div class="b-example-divider"></div>
 
-<div class="maindiv"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- maindivadd -->
+
+<div id="main-add-id" class="maindiv"> 
+  <div class="littlemain">
+    <form>
+      <table style="font-size: 18px; " class="border-none">
+        <tr>
+          <th class="dark">ID<span style="color: red">*</span></th>
+          <th class="dark">Project</th>
+          <th class="dark">Type<span style="color: red">*</span></th>
+          <th class="dark">Manual/Automation<span style="color: red">*</span></th>
+          <th class="dark">Date of Creation</th>
+          <th class="dark" style="width: 200px">Last Update</th>
+        </tr>
+        <tr>
+          <td><input type="text" name=""></td>
+          <td>NIA</td>
+          <td>
+            <select>
+              <option>Functional</option>
+              <option>Load</option>
+              <option>Performance</option>
+              <option>Integration</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option>Manual</option>
+              <option>Automation</option>
+            </select>
+          </td>
+          <td>12.10.2022</td>
+          <td>14.10.2022</td>
+        </tr>
+        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+        <tr>
+          <th class="dark">Reporter<span style="color: red">*</span></th>
+          <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname">  </td>
+          <th class="dark">Assigned to<span style="color: red">*</span></th>
+          <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname"> </td>
+        </tr>
+        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+      </table>
+      <details style="width: 100%">
+        <summary style="text-align: left; font-size: 20px; border-right:1px solid #00000029; border-left: 1px solid #00000029; padding-left: 10px">Details</summary>
+        <table style="width: 100%; font-size: 18px ; border-bottom: none" class="border-none">
+          <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+          <tr>
+            <td class="dark">Priority</td>
+            <td>
+              <select>
+                <option>Critical</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </td>
+            <td class="dark">Severity</td>
+            <td>
+              <select>
+                <option>Critical</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </td>
+            <td class="dark">Status</td>
+            <td>
+              <select>
+                <option>New</option>
+                <option>Assigned</option>
+                <option>Open</option>
+                <option>Fixed</option>
+                <option>Pending retest</option>
+                <option>Retest</option>
+              </select>
+            </td>
+          </tr>
+          <tr style="height: 10px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+          <tr>
+            <td class="dark">Browser</td>
+            <td>
+              <select>
+                <option>Firefox</option>
+                <option>Google Chrome</option>
+                <option>Microsoft Edge</option>
+                <option>Apple Safari</option>
+                <option>Opera</option>
+              </select>
+            </td>
+            <td class="dark">OS</td>
+            <td>
+              <select>
+                <option>Windows</option>
+                <option>macOS</option>
+                <option>Android</option>
+                <option>Linux</option>
+              </select>
+            </td>
+            <td class="dark">OS Version</td>
+            <td>
+              <select>
+                <option></option>
+              </select>
+            </td>
+          </tr>    
+        </table>
+      </details>
+
+      <table style="font-size: 18px" class="border-none">
+        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+        <tr>
+          <td class="dark" style="width: 9.1%;">Description<span style="color: red">*</span></td>
+          <td style="width: 100%;" colspan="5" > <input type="text" name=""></td>
+        </tr>
+        <tr>
+          <td class="dark">Preconditions</td>
+          <td colspan="5"> <textarea rows="1"></textarea></td>
+        </tr>
+        <tr>
+          <td class="dark">Steps To Execute</td>
+          <td colspan="5"><textarea rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td class="dark">Test Data</td>
+          <td colspan="5"><textarea rows="1"></textarea></td>
+        </tr>
+      </table>
+
+      <table style="font-size: 18px; " class="border-none">
+        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+        <tr style="height: 50px">
+          <td class="dark">Expected Result<span style="color: red">*</span></td>
+          <td><input type="text" name=""></td>
+        </tr>
+        <tr style="height: 50px">
+          <td class="dark">Actual Result<span style="color: red">*</span></td>
+          <td><input type="text" name=""></td>
+        </tr>
+        <tr style="height: 50px">
+          <td class="dark">Upload file</td>
+          <td>
+            <label for="file-upload" class="custom-file-upload">Browse...</label>
+            <input id="file-upload" type="file"/>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" name="" value="Add" class="addtest">
+    </form>
+  </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- active -->
+
+
+
+<div id="main-activ-id" class="maindiv"> 
     <div class="littlemain">
         <!-- class=topnav փնտրման մասը -->
         <div class="topnav">
@@ -94,9 +313,28 @@
                 
             </tr>
         </table>
-        <input type="submit" name="" value="Add" class="addtest">
+
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- ///////// Footer div //////// -->
 <footer>
     <div class="footer-child">
