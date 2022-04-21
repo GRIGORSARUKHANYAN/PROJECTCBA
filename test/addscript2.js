@@ -7,7 +7,7 @@ let a
 let x=[]
 const serchbtn = document.getElementById("serchbtn");
 const serchinput = document.getElementById("serchinput");
-
+const littlemain = document.getElementById("littlemain");
 // Փնտրման ֆունկցիա
 function searchfu() {
     for (let i = 0; i < classinput.length; i++){
@@ -19,6 +19,9 @@ if (b!==-1) {
     trclass[i].style.backgroundColor = "#EFEFEF";
     
     xbtn.style.display="block"
+    // littlemain.style.left="-20px"
+    littlemain.style.marginLeft="74.5%"
+
     x.push(i)
 }
 
@@ -30,6 +33,10 @@ function bacgroundnone() {
   
     trclass[x[i]].style.backgroundColor = "white"; 
     xbtn.style.display="none"
+    littlemain.style.marginLeft="76%"
+
+
+    // littlemain.style.marginLeft="75%"
    }
     
 }
@@ -68,9 +75,12 @@ function delliteicone() {
     if (classinput[i].checked == true){
        
         dellicone.style.display = "block";
+        littlemain.style.left="-25px"
+        // littlemain.style.marginLeft="74.5%"
         return
     } else {
         dellicone.style.display = "none";
+        littlemain.style.left="2px"
         
     }
   }
@@ -85,6 +95,7 @@ function rem() {
 
 trclass[i].remove()
 dellicone.style.display = "none";
+// littlemain.style.marginLeft="72.5%"
 }
     }
 }
@@ -109,17 +120,21 @@ let mainactivid = document.getElementById("main-activ-id")
 function activ2() {
     mainaddid.style.display="block"
     mainactivid.style.display="none"
-    navactiv.style.backgroundColor="#FFFFFF"
-    navadd.style.backgroundColor="#0D6EFD"
-    
+    // navactiv.style.backgroundColor="#FFFFFF"
+    // navadd.style.backgroundColor="#0D6EFD"
+    navadd.setAttribute("class", "activenavclass");
+    navactiv.setAttribute("class", "pasivnavclass");
 }
 
 
 function activ1() {
     mainaddid.style.display="none"
     mainactivid.style.display="block"
-    navactiv.style.backgroundColor="#0D6EFD"
-    navadd.style.backgroundColor="#FFFFFF"
-}
+    // navactiv.style.backgroundColor="#0D6EFD"
+    // navadd.style.backgroundColor="#FFFFFF"
+
+    navactiv.setAttribute("class", "activenavclass");
+   navadd.setAttribute("class", "pasivnavclass");
+} 
 
 activ1()
