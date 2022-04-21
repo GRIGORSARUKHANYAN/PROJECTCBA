@@ -10,20 +10,22 @@ const serchinput = document.getElementById("serchinput");
 const littlemain = document.getElementById("littlemain");
 // Փնտրման ֆունկցիա
 function searchfu() {
+    bacgroundnone()
+    
     for (let i = 0; i < classinput.length; i++){
     a= serchinput.value
-// console.log(a);
 
 b= sercharr[i].indexOf(`${a}`)
 if (b!==-1) {
-    trclass[i].style.backgroundColor = "#EFEFEF";
-    
-    xbtn.style.display="block"
+    // trclass[i].style.backgroundColor = "#EFEFEF";
+    trclass[i].removeAttribute("class");
+    // xbtn.style.display="table"
     // littlemain.style.left="-20px"
-    littlemain.style.marginLeft="74.5%"
+    // littlemain.style.marginLeft="74.5%"
 
     x.push(i)
-}
+}else{trclass[i].setAttribute("class", "searchnone")}
+
 
 }
 }
@@ -32,17 +34,17 @@ function bacgroundnone() {
    for (let i = 0; i < x.length; i++) {
   
     trclass[x[i]].style.backgroundColor = "white"; 
-    xbtn.style.display="none"
-    littlemain.style.marginLeft="76%"
+    // xbtn.style.display="none"
+    // littlemain.style.marginLeft="76%"
 
 
     // littlemain.style.marginLeft="75%"
    }
     
 }
-xbtn.addEventListener("click", bacgroundnone);
+// xbtn.addEventListener("click", bacgroundnone);
 
-serchbtn.addEventListener("click", searchfu);
+// serchbtn.addEventListener("click", searchfu);
 
 
 
@@ -75,12 +77,12 @@ function delliteicone() {
     if (classinput[i].checked == true){
        
         dellicone.style.display = "block";
-        littlemain.style.left="-25px"
+        // littlemain.style.left="-25px"
         // littlemain.style.marginLeft="74.5%"
         return
     } else {
         dellicone.style.display = "none";
-        littlemain.style.left="2px"
+        // littlemain.style.left="2px"
         
     }
   }
@@ -95,7 +97,7 @@ function rem() {
 
 trclass[i].remove()
 dellicone.style.display = "none";
-littlemain.style.left="3px"
+// littlemain.style.left="3px"
 // littlemain.style.marginLeft="72.5%"
 }
     }

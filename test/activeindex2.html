@@ -77,20 +77,21 @@
 
 
 <div id="main-activ-id" class="maindiv"> 
-  <div  class="littlemain">
+  <div  class="littlemain" >
       <!-- class=topnav փնտրման մասը -->
  
-      <div id="littlemain" style="  width: 400px; height: 50px;  display: flex;"  class=" input-group">
-        <i id="xbtn" class="fa fa-close " style=" display: none; font-size:28px"></i>
+      <div id="littlemain" class =" input-group">
+        <!-- <i id="xbtn" class="fa fa-close " style=" display: none; font-size:28px"></i> -->
         <div class="form-outline">
-          <input id="serchinput" type="search" style="font-size: 17px;"  class="form-control" />
-          
+          <!-- <input type="text"  id="serchinput" onkeyup="searchfu()" placeholder="Search for names.." title="Type in a name"> -->
+          <input  id="serchinput"  onkeyup="searchfu()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search " title="Type in a name"  class="form-control" />
+         
         </div>
         <!-- <i   class="gg-trash" style="display: none; width: 20px; height: 20px; " ></i> -->
         <i id="dellicone"class="fas fa-trash"  style=" display: none; font-size: 30px;"></i>
-        <button id="serchbtn" style="height: 34px; width: 80px;"  type="button" class="btn btn-primary">
-          <i class="fas fa-search"></i>
-        </button>
+        <!-- <button id="serchbtn" style="height: 34px; width: 80px;"  type="button" class="btn btn-primary"> -->
+          <!-- <i class="fas fa-search"></i> -->
+        <!-- </button> -->
         
       </div>
       
@@ -108,6 +109,7 @@
               <th>Description</th>
               
           </tr>
+          
       </table>
 
   </div>
