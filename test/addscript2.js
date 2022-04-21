@@ -95,6 +95,7 @@ function rem() {
 
 trclass[i].remove()
 dellicone.style.display = "none";
+littlemain.style.left="3px"
 // littlemain.style.marginLeft="72.5%"
 }
     }
