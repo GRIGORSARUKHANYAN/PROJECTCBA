@@ -160,24 +160,6 @@ if (b!==-1) {
 
 
 
-// ֆունկցիան վերացնում է փնտրման արդյունքը
-// function bacgroundnone() {
-//    for (let i = 0; i < x.length; i++) {
-  
-//     trclass[x[i]].style.backgroundColor = "white"; 
-//     // xbtn.style.display="none"
-//     // littlemain.style.marginLeft="76%"
-
-
-//     // littlemain.style.marginLeft="75%"
-//    }
-    
-// }
-// xbtn.addEventListener("click", bacgroundnone);
-
-// serchbtn.addEventListener("click", searchfu);
-
-
 
 
 // addlist ֆունկցիան ավելացնում է տողերը
@@ -280,13 +262,22 @@ function osversion() {
     const selectionversion = document.getElementById("selectionversion");
 if (selectionosid.value=="Windows") {
     selectionversion.innerHTML=` <option>Windows 7</option> <option>Windows 8</option> <option>Windows10</option> <option>Windows11</option>`
-}
+}else
 if (selectionosid.value=="macOS") {
-    selectionversion.innerHTML=` <option>macOS 11 Big Sur
-    </option> <option>Gentoo Linux</option> <option>Ubuntu Linux</option> <option>Linux Mint Desktop</option><option>RHEL Linux Distribution</option> <option>CentOS Linux Distribution</option> <option>Fedora Linux Distribution</option> <option>Kali Linux Distribution</option>`
+    selectionversion.innerHTML=` <option>macOS 12</option> <option>macOS 11</option> <option>macOS 10.15</option> <option>macOS 10.14</option>
+    <option>macOS 10.13</option> <option>macOS 10.12</option> `
 }
+else
+if (selectionosid.value=="Android") {
+    selectionversion.innerHTML=` <option>Android 12L</option> <option>Android 12</option> <option>Android 11</option> <option>Android 10</option>
+    <option>Android Pie</option> <option>Android Oreo</option> <option>Android Nougat</option> <option>Android Marshmallow</option> 
+    <option>Android Lollipop</option> <option>Android KitKat</option> `
+}
+else
 if (selectionosid.value=="Linux") {
-    selectionversion.innerHTML=` <option>Debian Linux</option> <option>Gentoo Linux</option> <option>Ubuntu Linux</option> <option>Linux Mint Desktop</option><option>RHEL Linux Distribution</option> <option>CentOS Linux Distribution</option> <option>Fedora Linux Distribution</option> <option>Kali Linux Distribution</option>`
+    selectionversion.innerHTML=` <option>Debian Linux</option> <option>Gentoo Linux</option> <option>Ubuntu Linux</option> 
+    <option>Linux Mint Desktop</option><option>RHEL Linux Distribution</option> <option>CentOS Linux Distribution</option> 
+    <option>Fedora Linux Distribution</option> <option>Kali Linux Distribution</option>`
 }
 }
 osversion()
