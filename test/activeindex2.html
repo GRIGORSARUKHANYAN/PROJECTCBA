@@ -84,7 +84,7 @@
         <!-- <i id="xbtn" class="fa fa-close " style=" display: none; font-size:28px"></i> -->
         <div class="form-outline">
           <!-- <input type="text"  id="serchinput" onkeyup="searchfu()" placeholder="Search for names.." title="Type in a name"> -->
-          <input  id="serchinput"  onkeyup="searchfu()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search " title="Type in a name"  class="form-control" />
+          <!-- <input  id="serchinput"  onkeyup="searchfu()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search " title="Type in a name"  class="form-control" /> -->
          
         </div>
         <!-- <i   class="gg-trash" style="display: none; width: 20px; height: 20px; " ></i> -->
@@ -97,20 +97,44 @@
       
 
       <!-- սղյուսակի վերնագրային մասը -->
-      <table id="tableid"  style="width:100%;font-size: 18px; ">
-          <tr  >
-              <th></th>
-              <th></th>
-              <th>Id</th>
-              <th>Priority</th>
-              <th>Type</th>
-              <th>Status</th>
-              <th>Updated</th>
-              <th>Description</th>
+   
+       
+
+          <table   style="width:100%;font-size: 18px; ">
+            <tr  >
+              
+              <th><input  id="serchid"  onkeyup="searchfuid()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search id " title="Type in a name"  class="form-control" /></th>
+              <th><input  id="serchpriority"  onkeyup="searchfupriority()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Priority " title="Type in a name"  class="form-control" /></th>
+              <th><input  id="serchtype"  onkeyup="searchfutype()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search type " title="Type in a name"  class="form-control" /></th>
+              <th><input  id="serchstatus"  onkeyup="searchfustatus()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Status " title="Type in a name"  class="form-control" /></th>
+              <th><input  id="serchupdate"  onkeyup="searchfuupdated()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Update " title="Type in a name"  class="form-control" /></th>
+              <th><input  id="serchdescription"  onkeyup="searchfudescription()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Description " title="Type in a name"  class="form-control" /></th>
               
           </tr>
-          
-      </table>
+        </table>
+   
+
+
+
+
+            <table id="tableid"  style="width:100%;font-size: 18px; ">
+              <tr  >
+                  <th></th>
+                  <th></th>
+                  <th>Id</th>
+                  <th>Priority</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                  <th>Updated</th>
+                  <th>Description</th>
+                  
+              </tr>
+              
+          </table>
+
+
+      
+      
 
   </div>
 </div>
@@ -209,7 +233,7 @@
             </td>
             <td class="dark">OS</td>
             <td>
-              <select>
+              <select onchange="osversion()" id="selectionosid" >
                 <option>Windows</option>
                 <option>macOS</option>
                 <option>Android</option>
@@ -218,7 +242,7 @@
             </td>
             <td class="dark">OS Version</td>
             <td>
-              <select>
+              <select id="selectionversion" >
                 <option></option>
               </select>
             </td>
