@@ -207,6 +207,7 @@ function addlist() {
         <td>${objtable[i].status}</td>
         <td>${objtable[i].updated}</td>
         <td>${objtable[i].description}</td>
+        <td></td>
         </tr>`
         sercharr.push(`${i+1}`
         )
