@@ -66,237 +66,216 @@
       </ul>
     </header>
   </div>
-
-  <div class="b-example-divider"></div>
-
-
-
-<!-- active -->
-<!-- ms-depth-16    fluent -->
-
-
-<div id="main-activ-id" class="maindiv "> 
-  <div  class="littlemain  "   >
-      <!-- class=topnav փնտրման մասը -->
- 
- 
-      
-
-      <!-- սղյուսակի վերնագրային մասը -->
-   
-       
-   <table   >
-          <table style="  margin-top: 100px; width:100%;font-size: 18px; background-color: #ffffff; "   >
-            <tr  >
-              <th style="width: 6.6%;"> <i id="dellicone"class="fas fa-trash"  style=" display: none; font-size: 30px;"></i></th>
-              <th style="width: 6.45%;"></th>
-              <th><input  id="serchid"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search id " title="Type in a name"  class="form-control" /></th>
-              <th><input  id="serchpriority"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Priority " title="Type in a name"  class="form-control" /></th>
-              <th><input  id="serchtype"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search type " title="Type in a name"  class="form-control" /></th>
-              <th><input  id="serchstatus"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Status " title="Type in a name"  class="form-control" /></th>
-              <th><input  id="serchupdate"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Update " title="Type in a name"  class="form-control" /></th>
-              <th><input  id="serchdescription"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Description " title="Type in a name"  class="form-control" /></th>
-              
-          </tr>
-        </table>
-   
-            <table id="tableid" style="  width:100%;font-size: 18px; background-color: #ffffff; " >
-              <tr  >
+  <div  class="b-example-divider"></div>  <!-- imast@ ???  -->
+  
+  <!-- active -->
+<!-- test case -էջ -->
+  <div id="main-activ-id" class="maindiv "> 
+    <div  class="littlemain  "   > 
+          <!-- սղյուսակի վերնագրային մասը -->
+              <table class=" tableclass   ms-depth-16" id="tableid"   >
+                <tr  >
+                  <th><i id="dellicone"class="fas fa-trash"  style=" display: none; font-size: 27px; "></i></th>
                   <th></th>
+                  <th><input  id="serchid"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search id  " title="Type in a name"  class="form-control" /></th>
+                  <th><input  id="serchpriority"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Priority " title="Type in a name"  class="form-control" /></th>
+                  <th><input  id="serchtype"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search type " title="Type in a name"  class="form-control" /></th>
+                  <th><input  id="serchstatus"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Status " title="Type in a name"  class="form-control" /></th>
+                  <th><input  id="serchupdate"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Update " title="Type in a name"  class="form-control" /></th>
+                  <th><input  id="serchdescription"  onkeyup="myserch()" type="search" style=" border-radius: 5px; font-size: 17px;" placeholder="Search Description " title="Type in a name"  class="form-control" /></th>
                   <th></th>
-                  <th>Id</th>
-                  <th>Priority</th>
-                  <th>Type</th>
-                  <th>Status</th>
-                  <th>Updated</th>
-                  <th>Description</th>
-                  <th>Result</th>
-              </tr>
-              
-          </table>
-</table>
-
-      
-      
-
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Id</th>
+                    <th>Priority</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Updated</th>
+                    <th>Description</th>
+                    <th>Result</th>
+                </tr>
+                
+              </table>
+    </div>
   </div>
-</div>
+  <!-- maindivadd -->
 
 
 
-<!-- maindivadd -->
-
-<div id="main-add-id" class="maindiv"> 
-  <div class="littlemain">
-    <form>
-      <table style="font-size: 18px; " class="border-none">
-        <tr>
-          <th class="dark">ID<span style="color: red">*</span></th>
-          <th class="dark">Project</th>
-          <th class="dark">Type<span style="color: red">*</span></th>
-          <th class="dark">Manual/Automation<span style="color: red">*</span></th>
-          <th class="dark">Date of Creation</th>
-          <th class="dark" style="width: 200px">Last Update</th>
-        </tr>
-        <tr>
-          <td><input type="text" name=""></td>
-          <td>NIA</td>
-          <td>
-            <select>
-              <option>Functional</option>
-              <option>Load</option>
-              <option>Performance</option>
-              <option>Integration</option>
-            </select>
-          </td>
-          <td>
-            <select>
-              <option>Manual</option>
-              <option>Automation</option>
-            </select>
-          </td>
-          <td>12.10.2022</td>
-          <td>14.10.2022</td>
-        </tr>
-        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
-        <tr>
-          <th class="dark">Reporter<span style="color: red">*</span></th>
-          <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname">  </td>
-          <th class="dark">Assigned to<span style="color: red">*</span></th>
-          <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname"> </td>
-        </tr>
-        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
-      </table>
-      <details style="width: 100%">
-        <summary style="text-align: left; font-size: 20px; border-right:1px solid #00000029; border-left: 1px solid #00000029; padding-left: 10px">Details</summary>
-        <table style="width: 100%; font-size: 18px ; border-bottom: none" class="border-none">
+  <!-- Add test case -էջ -->
+  <div id="main-add-id" class="maindiv"> 
+    <div class="littlemain">
+      <form>
+        <table style="font-size: 18px; " class="border-none">
+          <tr>
+            <th class="dark">ID<span style="color: red">*</span></th>
+            <th class="dark">Project</th>
+            <th class="dark">Type<span style="color: red">*</span></th>
+            <th class="dark">Manual/Automation<span style="color: red">*</span></th>
+            <th class="dark">Date of Creation</th>
+            <th class="dark" style="width: 200px">Last Update</th>
+          </tr>
+          <tr>
+            <td><input type="text" name=""></td>
+            <td>NIA</td>
+            <td>
+              <select>
+                <option>Functional</option>
+                <option>Load</option>
+                <option>Performance</option>
+                <option>Integration</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option>Manual</option>
+                <option>Automation</option>
+              </select>
+            </td>
+            <td>12.10.2022</td>
+            <td>14.10.2022</td>
+          </tr>
           <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
           <tr>
-            <td class="dark">Priority</td>
+            <th class="dark">Reporter<span style="color: red">*</span></th>
+            <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname">  </td>
+            <th class="dark">Assigned to<span style="color: red">*</span></th>
+            <td colspan="2"> <input type="text" name="" class="typedata" placeholder="Name Surname"> </td>
+          </tr>
+          <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+        </table>
+        <details style="width: 100%">
+          <summary style="text-align: left; font-size: 20px; border-right:1px solid #00000029; border-left: 1px solid #00000029; padding-left: 10px">Details</summary>
+          <table style="width: 100%; font-size: 18px ; border-bottom: none" class="border-none">
+            <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+            <tr>
+              <td class="dark">Priority</td>
+              <td>
+                <select>
+                  <option>Critical</option>
+                  <option>High</option>
+                  <option>Medium</option>
+                  <option>Low</option>
+                </select>
+              </td>
+              <td class="dark">Severity</td>
+              <td>
+                <select>
+                  <option>Critical</option>
+                  <option>High</option>
+                  <option>Medium</option>
+                  <option>Low</option>
+                </select>
+              </td>
+              <td class="dark">Status</td>
+              <td>
+                <select>
+                  <option>New</option>
+                  <option>Assigned</option>
+                  <option>Open</option>
+                  <option>Fixed</option>
+                  <option>Pending retest</option>
+                  <option>Retest</option>
+                </select>
+              </td>
+            </tr>
+            <tr style="height: 10px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+            <tr>
+              <td class="dark">Browser</td>
+              <td>
+                <select>
+                  <option>Firefox</option>
+                  <option>Google Chrome</option>
+                  <option>Microsoft Edge</option>
+                  <option>Apple Safari</option>
+                  <option>Opera</option>
+                </select>
+              </td>
+              <td class="dark">OS</td>
+              <td>
+                <select onchange="osversion()" id="selectionosid" >
+                  <option>Windows</option>
+                  <option>macOS</option>
+                  <option>Android</option>
+                  <option>Linux</option>
+                </select>
+              </td>
+              <td class="dark">OS Version</td>
+              <td>
+                <select id="selectionversion" >
+                  <option></option>
+                </select>
+              </td>
+            </tr>    
+          </table>
+        </details>
+
+        <table style="font-size: 18px" class="border-none">
+          <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+          <tr>
+            <td class="dark" style="width: 9.1%;">Description<span style="color: red">*</span></td>
+            <td style="width: 100%;" colspan="5" > <input type="text" name=""></td>
+          </tr>
+          <tr>
+            <td class="dark">Preconditions</td>
+            <td colspan="5"> <textarea rows="1"></textarea></td>
+          </tr>
+          <tr>
+            <td class="dark">Steps To Execute</td>
+            <td colspan="5"><textarea rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td class="dark">Test Data</td>
+            <td colspan="5"><textarea rows="1"></textarea></td>
+          </tr>
+        </table>
+
+        <table style="font-size: 18px; " class="border-none">
+          <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
+          <tr style="height: 50px">
+            <td class="dark">Expected Result<span style="color: red">*</span></td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr style="height: 50px">
+            <td class="dark">Actual Result<span style="color: red">*</span></td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr style="height: 50px">
+            <td class="dark">Upload file</td>
             <td>
-              <select>
-                <option>Critical</option>
-                <option>High</option>
-                <option>Medium</option>
-                <option>Low</option>
-              </select>
-            </td>
-            <td class="dark">Severity</td>
-            <td>
-              <select>
-                <option>Critical</option>
-                <option>High</option>
-                <option>Medium</option>
-                <option>Low</option>
-              </select>
-            </td>
-            <td class="dark">Status</td>
-            <td>
-              <select>
-                <option>New</option>
-                <option>Assigned</option>
-                <option>Open</option>
-                <option>Fixed</option>
-                <option>Pending retest</option>
-                <option>Retest</option>
-              </select>
+              <label for="file-upload" class="custom-file-upload">Browse...</label>
+              <input id="file-upload" type="file"/>
             </td>
           </tr>
-          <tr style="height: 10px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
-          <tr>
-            <td class="dark">Browser</td>
-            <td>
-              <select>
-                <option>Firefox</option>
-                <option>Google Chrome</option>
-                <option>Microsoft Edge</option>
-                <option>Apple Safari</option>
-                <option>Opera</option>
-              </select>
-            </td>
-            <td class="dark">OS</td>
-            <td>
-              <select onchange="osversion()" id="selectionosid" >
-                <option>Windows</option>
-                <option>macOS</option>
-                <option>Android</option>
-                <option>Linux</option>
-              </select>
-            </td>
-            <td class="dark">OS Version</td>
-            <td>
-              <select id="selectionversion" >
-                <option></option>
-              </select>
-            </td>
-          </tr>    
         </table>
-      </details>
+        <input type="submit" name="" value="Add" class="addtest">
+      </form>
+    </div>
+  </div> 
 
-      <table style="font-size: 18px" class="border-none">
-        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
-        <tr>
-          <td class="dark" style="width: 9.1%;">Description<span style="color: red">*</span></td>
-          <td style="width: 100%;" colspan="5" > <input type="text" name=""></td>
-        </tr>
-        <tr>
-          <td class="dark">Preconditions</td>
-          <td colspan="5"> <textarea rows="1"></textarea></td>
-        </tr>
-        <tr>
-          <td class="dark">Steps To Execute</td>
-          <td colspan="5"><textarea rows="3"></textarea></td>
-        </tr>
-        <tr>
-          <td class="dark">Test Data</td>
-          <td colspan="5"><textarea rows="1"></textarea></td>
-        </tr>
-      </table>
-
-      <table style="font-size: 18px; " class="border-none">
-        <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
-        <tr style="height: 50px">
-          <td class="dark">Expected Result<span style="color: red">*</span></td>
-          <td><input type="text" name=""></td>
-        </tr>
-        <tr style="height: 50px">
-          <td class="dark">Actual Result<span style="color: red">*</span></td>
-          <td><input type="text" name=""></td>
-        </tr>
-        <tr style="height: 50px">
-          <td class="dark">Upload file</td>
-          <td>
-            <label for="file-upload" class="custom-file-upload">Browse...</label>
-            <input id="file-upload" type="file"/>
-          </td>
-        </tr>
-      </table>
-      <input type="submit" name="" value="Add" class="addtest">
-    </form>
-  </div>
-</div> 
-
-        <!-- ///////// Footer div //////// -->
-<footer>
-    <div class="footer-child">
-        <div>
-            <span class="text-muted">Copyright © 2021       
-                <a href="https://www.cba.am/am/SitePages/Default.aspx" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" target="_blank">
-                    <img src="cba.png" width="20px" height="20px" >
-                </a>
-                Central Bank Of Armenia. All rights reserved.
-            </span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> 
-                <span class="text-muted" > Need help or have questions?  </span></a>
-            </li>
-            <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> <img src="mail.png" width="20px" height="20px" ></a></li>
-            <li class="ms-3"><a class="text-muted" href="tel:+37491110570"> <img src="Phone.png" width="20px" height="20px" ></a></li>
-        </ul>
-    </div> 
-</footer>
-  <script src="addscript2.js"></script>
+          <!-- ///////// Footer div //////// -->
+  <footer>
+      <div class="footer-child">
+          <div>
+              <span class="text-muted">Copyright © 2021       
+                  <a href="https://www.cba.am/am/SitePages/Default.aspx" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" target="_blank">
+                      <img src="cba.png" width="20px" height="20px" >
+                  </a>
+                  Central Bank Of Armenia. All rights reserved.
+              </span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> 
+                  <span class="text-muted" > Need help or have questions?  </span></a>
+              </li>
+              <li class="ms-3"><a class="text-muted" href="mailto:anna.khachaturyan@cba.am"> <img src="mail.png" width="20px" height="20px" ></a></li>
+              <li class="ms-3"><a class="text-muted" href="tel:+37491110570"> <img src="Phone.png" width="20px" height="20px" ></a></li>
+          </ul>
+      </div> 
+  </footer>
+    <script src="addscript2.js"></script>
 </body>
 </html>
 
