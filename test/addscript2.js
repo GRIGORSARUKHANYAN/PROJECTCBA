@@ -65,97 +65,130 @@ let a;
 
 
 
-
-
-
-
-function searchfuid() {
-
-
-
+function myserch() {
     const serchid = document.getElementById("serchid");
-    
-        
-    
-    let b;
-    let a; 
-    for (let i = 0; i < objtable.length; i++){
-    a= serchid.value.toUpperCase();
-b= objtable[i].id.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
-    trclass[i].removeAttribute("class");
-}else{trclass[i].setAttribute("class", "searchnone")}
-}
-    
-}
-
-
-function searchfupriority() {
-
     const serchpriority = document.getElementById("serchpriority");
-    let b;
-    let a; 
-    for (let i = 0; i < objtable.length; i++){
-    a= serchpriority.value.toUpperCase();
-b= objtable[i].priority.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
-    trclass[i].removeAttribute("class");
-}else{trclass[i].setAttribute("class", "searchnone")}
-}
-}
-function searchfutype() {
-
     const serchtype = document.getElementById("serchtype");
-    let b;
-    let a; 
-    for (let i = 0; i < objtable.length; i++){
-    a= serchtype.value.toUpperCase();
-b= objtable[i].type.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
-    trclass[i].removeAttribute("class");
-}else{trclass[i].setAttribute("class", "searchnone")}
-}
-}
-
-function searchfustatus() {
-
     const serchstatus = document.getElementById("serchstatus");
-    let b;
-    let a; 
-    for (let i = 0; i < objtable.length; i++){
-    a= serchstatus.value.toUpperCase();
-b= objtable[i].status.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
-    trclass[i].removeAttribute("class");
-}else{trclass[i].setAttribute("class", "searchnone")}
-}
-}
-function searchfuupdated() {
-
     const serchupdate = document.getElementById("serchupdate");
-    let b;
-    let a; 
-    for (let i = 0; i < objtable.length; i++){
-    a= serchupdate.value.toUpperCase();
-b= objtable[i].updated.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
-    trclass[i].removeAttribute("class");
-}else{trclass[i].setAttribute("class", "searchnone")}
-}
-}
-function searchfudescription() {
-
     const serchdescription = document.getElementById("serchdescription");
-    let b;
-    let a; 
     for (let i = 0; i < objtable.length; i++){
-    a= serchdescription.value.toUpperCase();
-b= objtable[i].description.toUpperCase().indexOf(`${a}`)
-if (b!==-1) {
+if (objtable[i].id.toUpperCase().indexOf(`${serchid.value.toUpperCase()}`)!==-1 &&
+objtable[i].priority.toUpperCase().indexOf(`${serchpriority.value.toUpperCase()}`)!==-1 &&
+objtable[i].type.toUpperCase().indexOf(`${serchtype.value.toUpperCase()}`)!==-1 &&  
+objtable[i].status.toUpperCase().indexOf(`${serchstatus.value.toUpperCase()}`)!==-1 &&  
+objtable[i].updated.toUpperCase().indexOf(`${serchupdate.value.toUpperCase()}`)!==-1 &&  
+objtable[i].description.toUpperCase().indexOf(`${serchdescription.value.toUpperCase()}`)!==-1 
+) {
     trclass[i].removeAttribute("class");
 }else{trclass[i].setAttribute("class", "searchnone")}
+
 }
 }
+
+
+
+// function searchfuid() {
+//     const serchid = document.getElementById("serchid");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+            
+//             continue
+            
+//         }else 
+//     a= serchid.value.toUpperCase();
+// b= objtable[i].id.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
+
+
+// function searchfupriority() {
+
+//     const serchpriority = document.getElementById("serchpriority");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+//             continue
+//         }else 
+//     a= serchpriority.value.toUpperCase();
+// b= objtable[i].priority.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
+// function searchfutype() {
+
+//     const serchtype = document.getElementById("serchtype");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+//             continue
+//         }else 
+//     a= serchtype.value.toUpperCase();
+// b= objtable[i].type.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
+
+// function searchfustatus() {
+    
+
+//     const serchstatus = document.getElementById("serchstatus");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+//             continue
+//         }else 
+//     a= serchstatus.value.toUpperCase();
+// b= objtable[i].status.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
+// function searchfuupdated() {
+
+//     const serchupdate = document.getElementById("serchupdate");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+//             continue
+//         }else 
+//     a= serchupdate.value.toUpperCase();
+// b= objtable[i].updated.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
+// function searchfudescription() {
+
+//     const serchdescription = document.getElementById("serchdescription");
+//     let b;
+//     let a; 
+//     for (let i = 0; i < objtable.length; i++){
+//         if (trclass[i].style.display=="none") {
+//             continue
+//         }else 
+//     a= serchdescription.value.toUpperCase();
+// b= objtable[i].description.toUpperCase().indexOf(`${a}`)
+// if (b!==-1) {
+//     trclass[i].removeAttribute("class");
+// }else{trclass[i].setAttribute("class", "searchnone")}
+// }
+// }
 
 
 
