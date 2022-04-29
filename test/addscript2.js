@@ -8,6 +8,7 @@ let objtable=
     status:"cccccc1",
     updated:"dddddd1",
     description:"eeeeee1",
+    result:"fffffff1",
     },
     {
     id:"a",
@@ -16,6 +17,7 @@ let objtable=
     status:"cccccc2",
     updated:"dddddd2",
     description:"eeeeee2",
+    result:"ffffff2",
     },
     {
     id:"3",
@@ -24,6 +26,7 @@ let objtable=
     status:"cccccc3",
     updated:"ddddddd3",
     description:"eeeeee3",
+    result:"fffffff3",
     },
     {
     id:"4",
@@ -32,6 +35,7 @@ let objtable=
     status:"cccccc4",
     updated:"dddddd4",
     description:"eeeeee4",
+    result:"fffffff4",
     },
     {
     id:"5",
@@ -40,6 +44,7 @@ let objtable=
     status:"cccccc5",
     updated:"ddddddd5",
     description:"eeeeee5",
+    result:"fffffff5",
     }
                          
 
@@ -56,13 +61,16 @@ function myserch() {
     const serchstatus = document.getElementById("serchstatus");
     const serchupdate = document.getElementById("serchupdate");
     const serchdescription = document.getElementById("serchdescription");
+    const serchresult = document.getElementById("serchresult");
     for (let i = 0; i < objtable.length; i++){
         if (objtable[i].id.toUpperCase().indexOf(`${serchid.value.toUpperCase()}`)!==-1 &&
             objtable[i].priority.toUpperCase().indexOf(`${serchpriority.value.toUpperCase()}`)!==-1 &&
             objtable[i].type.toUpperCase().indexOf(`${serchtype.value.toUpperCase()}`)!==-1 &&  
             objtable[i].status.toUpperCase().indexOf(`${serchstatus.value.toUpperCase()}`)!==-1 &&  
             objtable[i].updated.toUpperCase().indexOf(`${serchupdate.value.toUpperCase()}`)!==-1 &&  
-            objtable[i].description.toUpperCase().indexOf(`${serchdescription.value.toUpperCase()}`)!==-1 
+            objtable[i].description.toUpperCase().indexOf(`${serchdescription.value.toUpperCase()}`)!==-1 &&
+            objtable[i].result.toUpperCase().indexOf(`${serchresult.value.toUpperCase()}`)!==-1 
+
             ) {
             trclass[i].removeAttribute("class");
         }else
@@ -85,7 +93,7 @@ let tableid = document.getElementById("tableid")
         <td>${objtable[i].status}</td>
         <td>${objtable[i].updated}</td>
         <td>${objtable[i].description}</td>
-        <td></td>
+        <td>${objtable[i].result}</td>
         </tr>`
     }
 }

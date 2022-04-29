@@ -1,40 +1,4 @@
-/* .bigdiv{
-    width: 100%;
-    height: 900px;
-    background-color: rgb(255, 255, 255);
-    display: flex; 
-} */
 
- /* .leftdiv{
-    position: fixed;
-    padding-top: 10px;
-    width: 18%;
-    height: 100%;
-    background-color: rgb(216, 216, 216);
-    overflow-x: hidden;
-    box-sizing: inherit;
-    z-index: 2;
-
-}  */
-
-
-
-/* .section{
-    justify-content: space-between;
-    text-align: center;
-    width: 80%;
-    height: 100px;
-    margin-left: 10%;
-    border-radius: 20px;
-    padding-top: 35px;
-    
-}
-
-.section:hover{
-    background-color:#BAC7E6;
-    
-    transform: rotate(0) scale(1.09);
-} */
 
 .maindiv{
     width: 100%;
@@ -55,13 +19,6 @@
 
 
 
-/* .search-container{
-    margin-top: 20px;
-    display: flex;
- } */
- /* .gg-trash{
-     margin-left: 10px;
- } */
 
 .container{
       position: fixed;
@@ -144,7 +101,6 @@ input[type="file"] {
 }
 label{
     border: 1px solid white;
-    /* background-color: #007bff */
     padding: 1% 5%;
     font-size: 15px;
     color: white;
