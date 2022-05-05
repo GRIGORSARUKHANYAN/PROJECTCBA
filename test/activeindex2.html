@@ -58,9 +58,15 @@
         <h1 class="main_heddivh1" style="font-size: 35px; text-shadow: 2px 2px #a1a6ab;">CBA TestManager</h1>
       </a>
       <ul  class="nav ">
-        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;"  class="nav-item"><h2  >Projects</h2></li>
-        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;" id="navactiv" ><h2  >Test  Cases</h2></li>
-        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px; " id="navadd" ><h2  aria-current="page">Add  Test  Case</h2></li>
+        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;"  class="nav-item">
+          <select onchange="projectactive()" id="selectionproject" style="font-size: 22px;"  >
+          <option  >  Project </option>
+          <option>View all project</option>
+          <option>Create project</option>
+          <option>  Edit project</option>
+        </select></li>
+        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;" id="navactiv" ><p style="font-size: 22px;" >Test  Cases</p></li>
+        <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px; " id="navadd" ><p style="font-size: 22px;" aria-current="page">Add  Test  Case</p></li>
         <li class="nav-item"><a href="#" class="nav-link"><img src="./imge/notif.png" height="35px" width="35px"></a></li>
         <li class="nav-item"><a href="#" class="nav-link">Log out</a></li>
       </ul>
@@ -70,8 +76,8 @@
   
   <!-- active -->
 <!-- test case -էջ -->
-  <div id="main-activ-id" class="maindiv "> 
-    <div  class="littlemain  "   > 
+  <div  id="main-activ-id" class="maindiv "> 
+    <div     class="littlemain  "   > 
           <!-- սղյուսակի վերնագրային մասը -->
               <table class=" tableclass   ms-depth-16" id="tableid"   >
                 <tr  >
@@ -255,6 +261,121 @@
     </div>
   </div> 
 
+
+
+
+
+
+  <div style="padding-left: 50px; display: none; "  id="viwe-all-project-id" class="viwe-all-project-class"> 
+    
+      <table id="viwe-all-project-table-id" class="viwe-all-project-table-class"  style="font-size: 18px; " >
+        <tr>
+          <th style="border: none;"><span  class="fa fa-star" style="color: yellow;font-size: 12px;" ></span></th>
+          <th style="border: none; ">Name</th>
+          <th style="border: none;">Key</th>
+          <th style="border: none;">Type</th>
+          <th style="border: none;">Lead</th>
+          <th style="border: none;"></th>
+        </tr>
+       
+      </table>
+</div>
+
+
+
+<div style="padding-left: 46%; display: none; font-size: 10px; margin-top: 40px;"  id="edit-project-id" class="edit-project-class">
+<p>Name*</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<p>key</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<i class="fas fa-exclamation-circle"></i>
+<p>Url</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<p>project type</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<i class="fas fa-exclamation-circle"></i>
+<p>project catecory</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<i class="fas fa-exclamation-circle"></i>
+<p>Avatar*</p>
+<div style="display: flex; ">
+<img src="./imge/wallet.png" width="20px" height="20px" >
+<p style="padding-left: 15px;" >select image</p>
+</div>
+<p>deskription</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>project lead</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<p>Default Asignee</p>
+<select style="border:1px solid #00000029 ; width: 180px;" id="selectionosid" >
+  <option>Unassiqnes</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+<i class="fas fa-exclamation-circle"></i><br><br>
+<button style=" border-radius: 5px; background-color: #0D6EFD;" >save details</button>
+<span style="padding-left: 5px;"> cansle</span>
+
+
+
+</div>
+
+<div style=" margin-left: 44%; font-size: 10px; margin-top: 40px; display: none; "  id="creat-project-id" class="creat-project-class">
+<h1>Add project details</h1>
+<p>You can change these details anytime in your project settings</p>
+<p>Name*</p>
+<input style="border:1px solid #00000029 ; width: 180px;">
+<p>Access Anyone with access to niasystem can access and administer this project, Upgrade your plan to customize project permissions. </p><br>
+<div style="display: flex;">
+<p>key</p>
+<i style="padding:4px ;" class="fas fa-exclamation-circle"></i>
+</div>
+<input style="border:1px solid #00000029 ; width: 180px;"><br><br>
+<div style="background-color: #F5F5F6; width: 30%; " >
+<h3>Connect repositories documents and more</h3>
+<p>Sync your team's work from outher tools with this project for better visibility,access,and automation</p>  
+</div>
+<br>
+<button>cancle</button>
+<button style="background-color: #0D6EFD;">Create project</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <!-- ///////// Footer div //////// -->
   <footer>
       <div class="footer-child">
@@ -278,6 +399,13 @@
     <script src="addscript2.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 

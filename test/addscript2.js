@@ -154,22 +154,34 @@ navadd.addEventListener("click",  activ2);
 
 
 function activ2() {
+    let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+        viweallprojecttableid.style.display="none"
     let mainaddid = document.getElementById("main-add-id")
     let mainactivid = document.getElementById("main-activ-id")
     mainaddid.style.display="block"
     mainactivid.style.display="none"
     navadd.setAttribute("class", "activenavclass");
     navactiv.setAttribute("class", "pasivnavclass");
+    let editprojectid =document.getElementById("edit-project-id")
+    editprojectid.style.display="none"
+    let creatprojectid =document.getElementById("creat-project-id")
+        creatprojectid.style.display="none"
 }
 
 
 function activ1() {
+    let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+        viweallprojecttableid.style.display="none"
     let mainaddid = document.getElementById("main-add-id")
     let mainactivid = document.getElementById("main-activ-id")
     mainaddid.style.display="none"
     mainactivid.style.display="block"
     navactiv.setAttribute("class", "activenavclass");
     navadd.setAttribute("class", "pasivnavclass");
+    let editprojectid =document.getElementById("edit-project-id")
+    editprojectid.style.display="none"
+    let creatprojectid =document.getElementById("creat-project-id")
+        creatprojectid.style.display="none"
 } 
 
 activ1()
@@ -204,3 +216,104 @@ function osversion() {
     }
 }
 osversion()
+
+
+
+
+// View all project ---ավելացնել տողեր  
+
+function viewadd() {
+    for (let i = 0; i < 3; i++) {
+    let viweallprojecttableid =document.getElementById("viwe-all-project-table-id")
+     viweallprojecttableid.innerHTML+=` <tr>
+     <td style="border: none;"><span  class="fa fa-star"></span></td>
+     <td style="border: none;">GZNKH</td>
+     <td style="border: none;">GZNKH</td>
+     <td style="border: none;"> Company-maneged softweare</td>
+     <td style="border: none;">Narine Harutyunyan</td>
+     <td style="border: none;" ><i class="fas fa-pen" style="font-size:20px"></i></td>
+   </tr>`
+}
+}
+viewadd()
+
+
+
+
+function projectactive() {
+    let selectionproject =document.getElementById("selectionproject")
+    if (selectionproject.value=="Project") {     
+       activ1()
+    }
+        
+
+    
+    if (selectionproject.value=="View all project") {  
+        let mainaddid = document.getElementById("main-add-id")
+        let mainactivid = document.getElementById("main-activ-id")
+        mainaddid.style.display="none"
+        mainactivid.style.display="none"
+        navadd.setAttribute("class","pasivnavclass");
+        navactiv.setAttribute("class","pasivnavclass");
+        let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+        viweallprojecttableid.style.display="block"
+        let editprojectid =document.getElementById("edit-project-id")
+        editprojectid.style.display="none"
+        let creatprojectid =document.getElementById("creat-project-id")
+        creatprojectid.style.display="none"
+              
+    }
+    if (selectionproject.value=="Create project") {    
+        let mainaddid = document.getElementById("main-add-id")
+        let mainactivid = document.getElementById("main-activ-id")
+        mainaddid.style.display="none"
+        mainactivid.style.display="none"
+        navadd.setAttribute("class","pasivnavclass");
+        navactiv.setAttribute("class","pasivnavclass");
+        let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+        viweallprojecttableid.style.display="none"
+        let editprojectid =document.getElementById("edit-project-id")
+        editprojectid.style.display="none"
+        let creatprojectid =document.getElementById("creat-project-id")
+        creatprojectid.style.display="block"
+        
+
+    }
+    if (selectionproject.value=="Edit project") {  
+        let mainaddid = document.getElementById("main-add-id")
+        let mainactivid = document.getElementById("main-activ-id")
+        mainaddid.style.display="none"
+        mainactivid.style.display="none"
+        navadd.setAttribute("class","pasivnavclass");
+        navactiv.setAttribute("class","pasivnavclass");
+        let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+        viweallprojecttableid.style.display="none"
+        let editprojectid =document.getElementById("edit-project-id")
+        editprojectid.style.display="block"
+        let creatprojectid =document.getElementById("creat-project-id")
+        creatprojectid.style.display="none"
+    }
+
+}
+
+creat-project-id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// visual studia comunication 
