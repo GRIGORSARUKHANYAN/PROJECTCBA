@@ -3,7 +3,6 @@
 .maindiv{
     width: 100%;
     height: fit-content;
-    /* padding-bottom: 110px; */
     padding-top: 50px;
     text-align: -webkit-center;
     background-color: rgb(222 228 228 / 17%);
@@ -44,7 +43,6 @@ input, select, textarea {
 table{
     width: 100%;
 }
-
 th, td{
    border:1px solid #00000029 ;
 }
@@ -215,6 +213,20 @@ height: 23px;
 
 
 }
+
+
+
+
+
+
+option:checked, option:hover {
+    color: white;
+    background: #488f8f repeat url("data:image/gif;base64,R0lGO...");
+}
+
+
+
+
 
 
 @media screen and (max-width: 1200px) {

@@ -59,11 +59,10 @@
       </a>
       <ul  class="nav ">
         <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;"  class="nav-item">
-          <select onchange="projectactive()" id="selectionproject" style="font-size: 22px;"  >
+          <select  onchange="projectactive()" id="selectionproject" style="font-size: 22px;"  >
           <option  >  Project </option>
           <option>View all project</option>
           <option>Create project</option>
-          <option>  Edit project</option>
         </select></li>
         <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px;" id="navactiv" ><p style="font-size: 22px;" >Test  Cases</p></li>
         <li style="padding-left: 30px; padding-top: 13px; padding-right: 30px; " id="navadd" ><p style="font-size: 22px;" aria-current="page">Add  Test  Case</p></li>
@@ -75,7 +74,11 @@
   <div style="background-color: red;"  class="b-example-divider"></div>  
   
   <!-- active -->
+
+
+
 <!-- test case -էջ -->
+<div style="padding-bottom: 5%;" class="bigdiv" >
   <div  id="main-activ-id" class="maindiv "> 
     <div     class="littlemain  "   > 
           <!-- սղյուսակի վերնագրային մասը -->
@@ -152,7 +155,7 @@
           </tr>
           <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
         </table>
-        <details style="width: 100%">
+        <details style="width: 100% ;  ">
           <summary style="text-align: left; font-size: 20px; border-right:1px solid #00000029; border-left: 1px solid #00000029; padding-left: 10px">Details</summary>
           <table style="width: 100%; font-size: 18px ; border-bottom: none" class="border-none">
             <tr style="height: 15px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
@@ -189,7 +192,7 @@
             </tr>
             <tr style="height: 10px; border-right:1px solid #00000029; border-left: 1px solid #00000029"></tr>
             <tr>
-              <td class="dark">Browser</td>
+              <td  class="dark">Browser</td>
               <td>
                 <select>
                   <option>Firefox</option>
@@ -200,8 +203,8 @@
                 </select>
               </td>
               <td class="dark">OS</td>
-              <td>
-                <select onchange="osversion()" id="selectionosid" >
+              <td  style="width: 300px;">
+                <select  style="width: 300px;" onchange="osversion()" id="selectionosid" >
                   <option>Windows</option>
                   <option>macOS</option>
                   <option>Android</option>
@@ -209,8 +212,8 @@
                 </select>
               </td>
               <td class="dark">OS Version</td>
-              <td>
-                <select id="selectionversion" >
+              <td style="width: 300px;" >
+                <select style="width: 300px;" id="selectionversion" >
                   <option></option>
                 </select>
               </td>
@@ -264,7 +267,7 @@
 
 
 
-
+<!-- viwe all project -->
 
   <div style="padding-left: 50px; display: none; "  id="viwe-all-project-id" class="viwe-all-project-class"> 
     
@@ -281,21 +284,21 @@
       </table>
 </div>
 
+<!-- edit project -->
 
-
-<div style="padding-left: 46%; display: none; font-size: 10px; margin-top: 40px;"  id="edit-project-id" class="edit-project-class">
+<div style="padding-left: 40%; display: none; font-size: 16px; margin-top: 40px;  "  id="edit-project-id" class="edit-project-class">
 <p>Name*</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <p>key</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <i class="fas fa-exclamation-circle"></i>
 <p>Url</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <p>project type</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <i class="fas fa-exclamation-circle"></i>
 <p>project catecory</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <i class="fas fa-exclamation-circle"></i>
 <p>Avatar*</p>
 <div style="display: flex; ">
@@ -310,44 +313,50 @@
 <br>
 <br>
 <p>project lead</p>
-<input style="border:1px solid #00000029 ; width: 180px;">
+<input style="border:1px solid #00000029 ; width: 200px;">
 <p>Default Asignee</p>
-<select style="border:1px solid #00000029 ; width: 180px;" id="selectionosid" >
+<select style="border:1px solid #00000029 ; width: 200px;" id="selectionosid" >
   <option>Unassiqnes</option>
   <option>2</option>
   <option>3</option>
   <option>4</option>
 </select>
-<i class="fas fa-exclamation-circle"></i><br><br>
-<button style=" border-radius: 5px; background-color: #0D6EFD;" >save details</button>
+<i  class="fas fa-exclamation-circle"></i><br><br>
+<button onclick="viweallproject()" style=" border-radius: 5px; background-color: #0D6EFD;" >save details</button>
 <span style="padding-left: 5px;"> cansle</span>
 
 
 
 </div>
 
-<div style=" margin-left: 44%; font-size: 10px; margin-top: 40px; display: none; "  id="creat-project-id" class="creat-project-class">
+
+<!-- CREAT PROJECT -->
+<div style=" margin-left: 35%; font-size: 16px; margin-top: 40px; display: none; "  id="creat-project-id" class="creat-project-class">
 <h1>Add project details</h1>
 <p>You can change these details anytime in your project settings</p>
 <p>Name*</p>
 <input style="border:1px solid #00000029 ; width: 180px;">
-<p>Access Anyone with access to niasystem can access and administer this project, Upgrade your plan to customize project permissions. </p><br>
+<p>Access Anyone with access to niasystem can access and administer this project, <br>Upgrade your plan to customize project permissions. </p><br>
 <div style="display: flex;">
 <p>key</p>
 <i style="padding:4px ;" class="fas fa-exclamation-circle"></i>
 </div>
+
 <input style="border:1px solid #00000029 ; width: 180px;"><br><br>
-<div style="background-color: #F5F5F6; width: 30%; " >
+<div style="background-color: #F5F5F6; width: 40%;  " >
+<div style="display: flex;" >
+<input class="classinput" id="checkbox${i+1}" type="checkbox"   >
 <h3>Connect repositories documents and more</h3>
+</div>
 <p>Sync your team's work from outher tools with this project for better visibility,access,and automation</p>  
 </div>
 <br>
-<button>cancle</button>
-<button style="background-color: #0D6EFD;">Create project</button>
+<button style="border-radius: 5px;" >cancle</button>
+<button style=" border-radius: 5px; background-color: #0D6EFD;">Create project</button>
 
 
 </div>
-
+</div>
 
 
 
@@ -377,7 +386,7 @@
 
 
           <!-- ///////// Footer div //////// -->
-  <footer>
+  <footer  >
       <div class="footer-child">
           <div>
               <span class="text-muted">Copyright © 2021       

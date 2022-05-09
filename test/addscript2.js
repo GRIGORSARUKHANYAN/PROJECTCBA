@@ -231,7 +231,7 @@ function viewadd() {
      <td style="border: none;">GZNKH</td>
      <td style="border: none;"> Company-maneged softweare</td>
      <td style="border: none;">Narine Harutyunyan</td>
-     <td style="border: none;" ><i class="fas fa-pen" style="font-size:20px"></i></td>
+     <td style="border: none;" ><i class="fas fa-pen " onclick="editproject()"  style="font-size:20px"></i></td>
    </tr>`
 }
 }
@@ -249,18 +249,7 @@ function projectactive() {
 
     
     if (selectionproject.value=="View all project") {  
-        let mainaddid = document.getElementById("main-add-id")
-        let mainactivid = document.getElementById("main-activ-id")
-        mainaddid.style.display="none"
-        mainactivid.style.display="none"
-        navadd.setAttribute("class","pasivnavclass");
-        navactiv.setAttribute("class","pasivnavclass");
-        let viweallprojecttableid =document.getElementById("viwe-all-project-id")
-        viweallprojecttableid.style.display="block"
-        let editprojectid =document.getElementById("edit-project-id")
-        editprojectid.style.display="none"
-        let creatprojectid =document.getElementById("creat-project-id")
-        creatprojectid.style.display="none"
+        viweallproject()
               
     }
     if (selectionproject.value=="Create project") {    
@@ -279,24 +268,39 @@ function projectactive() {
         
 
     }
-    if (selectionproject.value=="Edit project") {  
-        let mainaddid = document.getElementById("main-add-id")
-        let mainactivid = document.getElementById("main-activ-id")
-        mainaddid.style.display="none"
-        mainactivid.style.display="none"
-        navadd.setAttribute("class","pasivnavclass");
-        navactiv.setAttribute("class","pasivnavclass");
-        let viweallprojecttableid =document.getElementById("viwe-all-project-id")
-        viweallprojecttableid.style.display="none"
-        let editprojectid =document.getElementById("edit-project-id")
-        editprojectid.style.display="block"
-        let creatprojectid =document.getElementById("creat-project-id")
-        creatprojectid.style.display="none"
-    }
 
 }
+function viweallproject(){let mainaddid = document.getElementById("main-add-id")
+let mainactivid = document.getElementById("main-activ-id")
+mainaddid.style.display="none"
+mainactivid.style.display="none"
+navadd.setAttribute("class","pasivnavclass");
+navactiv.setAttribute("class","pasivnavclass");
+let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+viweallprojecttableid.style.display="block"
+let editprojectid =document.getElementById("edit-project-id")
+editprojectid.style.display="none"
+let creatprojectid =document.getElementById("creat-project-id")
+creatprojectid.style.display="none"}
 
-creat-project-id
+
+
+
+function editproject(){
+    let mainaddid = document.getElementById("main-add-id")
+    let mainactivid = document.getElementById("main-activ-id")
+    mainaddid.style.display="none"
+    mainactivid.style.display="none"
+    navadd.setAttribute("class","pasivnavclass");
+    navactiv.setAttribute("class","pasivnavclass");
+    let viweallprojecttableid =document.getElementById("viwe-all-project-id")
+    viweallprojecttableid.style.display="none"
+    let editprojectid =document.getElementById("edit-project-id")
+    editprojectid.style.display="block"
+    let creatprojectid =document.getElementById("creat-project-id")
+    creatprojectid.style.display="none"
+}
+
 
 
 
