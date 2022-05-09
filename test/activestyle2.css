@@ -171,7 +171,7 @@ height: 23px;
     
 }
 .pasivnavclass:hover{
-    background-color: rgb(249, 235, 235);
+    background-color:#F9FAFA;
     border-radius: 15px;
 
 }
@@ -213,20 +213,6 @@ height: 23px;
 
 
 }
-
-
-
-
-
-
-option:checked, option:hover {
-    color: white;
-    background: #488f8f repeat url("data:image/gif;base64,R0lGO...");
-}
-
-
-
-
 
 
 @media screen and (max-width: 1200px) {
@@ -290,3 +276,7 @@ option:checked, option:hover {
               background-color: #ffffff;    
         }
     }
+
+
+
+
