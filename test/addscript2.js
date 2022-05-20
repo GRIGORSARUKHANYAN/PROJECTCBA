@@ -94,8 +94,6 @@ let selectprojectname= document.getElementById("selectprojectname")
         <option class="optionclass">${objtable[i].name}</option>
         `
 
-
-
         tableid.innerHTML+=`<tr id="trid${i+1}" class="trclass" >
         <td><input class="classinput" id="checkbox${i+1}" type="checkbox" onclick="delliteicone()"  ></td>
         <td><i class="fas fa-pen" style="font-size:20px"></i></td>
@@ -283,7 +281,7 @@ function projectactive() {
         
 
     }
-
+    selectionproject.value="Project"
 }
 function viweallproject(){let mainaddid = document.getElementById("main-add-id")
 let mainactivid = document.getElementById("main-activ-id")
