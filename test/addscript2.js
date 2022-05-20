@@ -9,6 +9,7 @@ let objtable=
     updated:"dddddd1",
     description:"eeeeee1",
     result:"fffffff1",
+    name:"ggggggGG1"
     },
     {
     id:"a",
@@ -18,6 +19,7 @@ let objtable=
     updated:"dddddd2",
     description:"eeeeee2",
     result:"ffffff2",
+    name:"ggggggGG2"
     },
     {
     id:"3",
@@ -27,7 +29,8 @@ let objtable=
     updated:"ddddddd3",
     description:"eeeeee3",
     result:"fffffff3",
-    },
+    name:"ggggggGG3"
+},
     {
     id:"4",
     priority:"aaaaaaaa4",
@@ -36,6 +39,7 @@ let objtable=
     updated:"dddddd4",
     description:"eeeeee4",
     result:"fffffff4",
+    name:"ggggggGG4"
     },
     {
     id:"5",
@@ -45,6 +49,7 @@ let objtable=
     updated:"ddddddd5",
     description:"eeeeee5",
     result:"fffffff5",
+    name:"ggggggGG5"
     }
                          
 
@@ -72,18 +77,25 @@ function myserch() {
             objtable[i].result.toUpperCase().indexOf(`${serchresult.value.toUpperCase()}`)!==-1 
 
             ) {
-            trclass[i].removeAttribute("class");
+                optionclass[i].removeAttribute("class");
         }else
-            {trclass[i].setAttribute("class", "searchnone")}
+            {optionclass[i].setAttribute("class", "searchnone")}
 
         }
 }
-
+let optionclass = document.querySelectorAll(`.optionclass`)
 // addlist ֆունկցիան ավելացնում է տողերը
 function addlist() {
 let tableid = document.getElementById("tableid")
+let selectprojectname= document.getElementById("selectprojectname")
     for (let i = 0; i < 5; i++)
     { 
+        selectprojectname.innerHTML+=`
+        <option class="optionclass">${objtable[i].name}</option>
+        `
+
+
+
         tableid.innerHTML+=`<tr id="trid${i+1}" class="trclass" >
         <td><input class="classinput" id="checkbox${i+1}" type="checkbox" onclick="delliteicone()"  ></td>
         <td><i class="fas fa-pen" style="font-size:20px"></i></td>
@@ -95,6 +107,7 @@ let tableid = document.getElementById("tableid")
         <td>${objtable[i].description}</td>
         <td>${objtable[i].result}</td>
         </tr>`
+        
     }
 }
 
@@ -154,6 +167,7 @@ navadd.addEventListener("click",  activ2);
 
 
 function activ2() {
+    selectionproject.value="Project"
     let viweallprojecttableid =document.getElementById("viwe-all-project-id")
         viweallprojecttableid.style.display="none"
     let mainaddid = document.getElementById("main-add-id")
@@ -170,6 +184,7 @@ function activ2() {
 
 
 function activ1() {
+    selectionproject.value="Project"
     let viweallprojecttableid =document.getElementById("viwe-all-project-id")
         viweallprojecttableid.style.display="none"
     let mainaddid = document.getElementById("main-add-id")
@@ -287,6 +302,7 @@ creatprojectid.style.display="none"}
 
 
 function editproject(){
+
     let mainaddid = document.getElementById("main-add-id")
     let mainactivid = document.getElementById("main-activ-id")
     mainaddid.style.display="none"
@@ -300,10 +316,6 @@ function editproject(){
     let creatprojectid =document.getElementById("creat-project-id")
     creatprojectid.style.display="none"
 }
-
-
-
-
 
 
 
